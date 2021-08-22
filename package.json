@@ -13,8 +13,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "set CI=true&react-scripts test --colors",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:nowatch": "set CI=true && react-scripts test --coverage -u",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
