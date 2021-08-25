@@ -4,7 +4,7 @@ import App from './App';
 
 
 describe('App component', () => {
-    it('App component should render app whit error 1', () => {
+    it('App component should render app whit error ', () => {
     const{asFragment} = render(<App />);
     expect(asFragment()).toMatchSnapshot();
     });
